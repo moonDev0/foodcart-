@@ -1,0 +1,722 @@
+nav ul li a.active::before{
+  width: 50%;
+}
+nav ul li a.active{ 
+  font-weight: bold !important;
+}
+nav ul li a::before {
+  position: absolute;
+  bottom: 8px;
+  width: 0%;
+  height: 2px;
+  display: block;
+  content: '';
+  background-color: #13ac77;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s ease;
+}
+nav ul li a:hover::before {
+  width: 50%;
+}
+
+* {
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+/* Home Page CSS starts */
+
+/* header */
+@font-face {
+  font-family: Futura-medium;
+  src: url(../fonts/futura/Futura\ Medium.otf);
+}
+@font-face {
+  font-family: Futura-bold;
+  src: url(../fonts/futura/Futura\ Bold.ttf);
+}
+.futura-medium {
+  font-family: Futura-medium;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.futura-bold {
+  font-family: Futura-bold;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-52 {
+  font-size: 52px;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.custom-mb-5 {
+  margin-bottom: 5rem;
+}
+.orange-color {
+  color: #ff6e00;
+}
+.top {
+  /* position: fixed !important;
+  top: 0; */
+  background: #fff !important;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  min-height: 90px;
+  padding: 16px 60px !important;
+}
+a{
+  font-family: Futura-medium !important;
+}
+.navbar-light .navbar-brand {
+  width: 60px;
+}
+nav ul li a {
+  position: relative;
+  font-size: 18px !important;
+  color: #000000 !important;
+  font-family: "Source Sans Pro", sans-serif;
+  opacity: 0.6;
+  display: inline-block !important;
+}
+nav ul li a.download-btn {
+  background: #13ac77;
+  border-radius: 20px;
+  padding: 20px !important;
+  font-family: Futura-medium;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 200 !important;
+  opacity: 1 !important;
+}
+.navbar-light .navbar-toggler {
+  border: 0;
+  padding: 3px 8px !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  text-decoration: none;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.toggler-icon {
+  display: none;
+}
+.navbar-toggler>.close .navbar-toggler.collapsed {
+  display:inline;
+}
+#hero {
+  height: 87vh !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.hero-slider {
+  z-index: -1 !important;
+  /* height: 87vh; */
+  overflow: hidden;
+}
+#hero img {
+ height: 100% !important;
+}
+.hero-text {
+  box-shadow: 0px 31px 99px #0000001a;
+  top: 50%;
+  background: #fff;
+}
+.start-shopping {
+  background: #13ac7717;
+  border-radius: 12px;
+  padding: 17px;
+  font-weight: 200 !important;
+}
+.first-btn {
+  background: #13ac77 !important;
+  border: 0;
+  border-radius: 12px;
+  padding: 17px !important;
+}
+a.start-shopping:hover {
+  background: #13ac77;
+  color: #fff;
+}
+.delivery-circle {
+  width: 80px;
+  height: 80px;
+  background: #13ac7717 0% 0% no-repeat padding-box;
+  border-radius: 76px;
+}
+.delivery-text h2 {
+  font-weight: 700 !important;
+}
+#health-concious .custom-card {
+  padding-top: 35px;
+  background: #fff;
+  box-shadow: 0px 21px 99px #0000001a;
+  border-radius: 12px;
+}
+#health-concious span.card-circle {
+  margin-top: 20px;
+  width: 63px;
+  height: 63px;
+  background: #e5e5e5;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+#health-concious .hover-btn {
+  height: 0px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transform: height .5s linear;
+  transition: .5s ease all  ;
+  overflow: hidden;
+ 
+}
+#health-concious .hover-btn a {
+  display: none;
+  transform: display .5s linear;
+
+}
+#health-concious .custom-card:hover {
+  background: #13AC77;
+}
+#health-concious .custom-card:hover .hover-btn a  {
+  display: inline-block;
+  background: #fff;
+  color: #13ac77;
+}
+#health-concious .custom-card:hover h5  {
+  color: #fff;
+}
+#health-concious .custom-card:hover .hover-btn {
+  background: #13AC77 ;
+  height: 70px !important;
+  margin-bottom: 10px;
+}
+
+.apple-playstore {
+  background: #13ac77;
+  border-radius: 12px;
+  padding: 17px;
+  font-weight: 200 !important;
+}
+#shop-for-groceries a {
+  text-decoration: none;
+  color: #fff;
+}
+.measurements {
+  line-height: 90px;
+  background: #ffffff;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.08);
+}
+#save .line {
+  border-left: 1px solid black;
+  height: 100px;
+}
+.count {
+  line-height: 150px;
+}
+.count-image {
+  top: 0;
+  left: 20%;
+}
+.full-measurement {
+  box-shadow: 0px 31px 99px #0000001a;
+}
+.partner-circle {
+  width: 63px;
+  height: 63px;
+  background: var(--unnamed-color-13ac77) 0% 0% no-repeat padding-box;
+  background: #13ac77 0% 0% no-repeat padding-box;
+  border-radius: 716px;
+  opacity: 0.1;
+}
+.get-direction a {
+  color: #ff6e00 !important;
+}
+#our-partners .card {
+  background-color: #fff !important;
+  box-shadow: 0px 31px 99px #0000001a !important;
+}
+#become-a-shopper {
+  width: 80vw;
+  background: #f4f4f4;
+  border-radius: 12px;
+  padding: 50px;
+}
+#become-a-shopper a {
+  background: #13ac77 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  letter-spacing: 0.41px;
+  color: #ffffff;
+  font-size: 12px !important;
+}
+/* Home Page CSS Ends */
+
+/* User Registeration Page CSS starts */
+#user-registeration .user-registation-bg {
+  height: 100vh;
+  background: #13ac77;
+  opacity: 0.9;
+}
+#user-registeration .register-arrow img {
+  margin-top: 70px;
+}
+#user-registeration .holla {
+  font-size: 40px;
+}
+#user-registeration .h70 {
+  height: 80vh;
+}
+#user-registeration .profile {
+  width: 150px;
+  height: 150px;
+  border: 1.5px solid var(--unnamed-color-13ac77);
+  background: #e7f7f1 0% 0% no-repeat padding-box;
+  border: 2px solid #13ac77;
+  margin-bottom: 10px;
+}
+#user-registeration .proceed {
+  background: #13ac77 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.41px;
+}
+#user-registeration .login {
+  letter-spacing: 2px;
+  color: #13ac77;
+}
+#user-registeration .mt {
+  margin-top: -3rem;
+}
+footer.register span a {
+  font-size: 12px;
+}
+label#name,
+label#email,
+label#password,
+label#website,
+label#address,
+label#message,
+label#home-address,
+label#d-license,
+#drag {
+  font-size: 12px !important;
+  opacity: 0.5;
+}
+#user-registeration form .form-check-label {
+  font-size: 14px;
+  font-family: Futura-medium;
+  opacity: .5 !important;
+}
+#user-registeration form input,
+textarea {
+  border: 0px !important;
+  background: rgba(19, 172, 119, 0.09) !important;
+  border-radius: 12px;
+}
+#user-registeration form input::placeholder,
+textarea::placeholder {
+  font-family: Futura-medium;
+  opacity: 0.5;
+}
+#user-registeration form .pw {
+  background: rgba(19, 172, 119, 0.09) !important;
+  border-radius: 12px;
+}
+#user-registeration form img.visibility-on {
+  right: 0;
+}
+#user-registeration .sign-up-logos img {
+  width: 40%;
+}
+.mt-become-partner {
+  margin-top: -20px;
+}
+.mt-sign-up {
+  margin-top: -30px;
+}
+.mt-log-in {
+  margin-top: -40px;
+}
+#user-registeration form .form-check-input {
+  border: 1px solid #13AC77  !important;
+  padding: 10px !important;
+}
+#user-registeration form .form-check-label {
+  margin: 6px 0 0 3px;
+}
+#user-registeration form .form-check-input:checked {
+  background-color: #13AC77  !important;
+
+}
+.upload-file {
+  border: 1px dashed black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+/* User Registeration Page CSS End */
+.slidecontainer {
+  margin-top: 200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: progressbar;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  background: url(../images/home/timeline.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 125px;
+  border: 0;
+  background: url(../images/home/angle-bracket.png);
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 100px;
+  height: 125px;
+  border: 0;
+  background: url(../images/home/angle-bracket.png);
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
+  cursor: pointer;
+}
+/* Shoppers Page CSS starts */
+
+/* Shoppers Page CSS End */
+
+/* Business Page CSS starts */
+#business {
+  height: 100vh !important;
+  backface-visibility: hidden;
+  animation: bg-slide 8s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  background: url(../images/home/groceries.png);
+}
+@keyframes bg-slide {
+  0% {
+    background: url(../images/home/groceries.png);
+  }
+  50% {
+    background: url(../images/home/carbage-grocery.jpg);
+  }
+  75% {
+    background: url(../images/home/pepper-groceries.jpg);
+  }
+  100% {
+    background: url(../images/home/pepper-groceries.jpg);
+  }
+}
+#business .hero-text a {
+  background: #13ac77 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.41px;
+  z-index: 1;
+}
+/* Business Page CSS Ends */
+
+/* become a partner Page CSS starts */
+.fs-36 {
+  font-size: 36px;
+}
+/* become a partner Page CSS Ends */
+
+/* Footer CSS Starts */
+footer.home {
+  backface-visibility: #fff;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.08);
+  width: 100%; 
+}
+.footer-nav-items span a {
+  color: #000000 !important;
+}
+.footer-nav-items span a:hover {
+  color: #fff !important;
+}
+/* Footer CSS Ends */
+
+/* media Queries */
+@media (min-width: 992px) {
+  input {
+    width: 516px;
+    height: 60px;
+  }
+  #user-registeration form input::placeholder {
+    padding: 2rem;
+  }
+  #user-registeration textarea {
+    height: 131px !important;
+  }
+}
+@media (min-width: 576px) {
+  .full-circle {
+    left: 25%;
+    position: absolute;
+  }
+  .half-circle {
+    margin-left: -150px;
+  }
+  .mobile-phone {
+    width: 18%;
+    top: 10%;
+    margin-left: -32%;
+  }
+}
+@media (max-width: 1430px) {
+  .fs-52 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-text {
+    box-shadow: 0px 31px 99px #0000001a;
+    top: 10%;
+    background: #fff;
+  }
+}
+@media (max-width: 1200px) {
+  .fs-24 {
+    font-size: 18px;
+  }
+  .fs-52 {
+    font-size: 32px;
+  }
+  .fs-16 {
+    font-size: 18px;
+  }
+}
+@media (max-height: 670px) {
+  #hero .hero-text h1 {
+    font-size: 36px;
+  }
+  #hero .hero-text span {
+    font-size: 18px;
+  }
+  #hero .hero-text div.mt-sm-4 {
+    margin-top: 5px !important;
+  }
+}
+@media (max-height: 601px) {
+  #hero .hero-text h1 {
+    font-size: 32px;
+  }
+  #hero .hero-text span {
+    font-size: 17px;
+  }
+  #hero .hero-text div.mt-sm-4 {
+    margin-top: 7px !important;
+  }
+  .delivery-circle {
+    display: none;
+  }
+}
+@media (max-width: 1281px) and (max-height: 800px) {
+  .fs-52 {
+    font-size: 20px !important;
+  }
+  .fs-24 {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 768px) {
+  .full-circle {
+    width: 30%;
+    top: 0;
+    left: 50%;
+    position: absolute;
+  }
+  .half-circle {
+    margin-left: 0px;
+    width: 500%;
+    overflow-x: hidden !important;
+  }
+  .mobile-phone {
+    position: absolute;
+    width: 40%;
+    top: 10%;
+    margin-left: -70%;
+  }
+ .shop{
+    padding: 10px 0;
+    text-align: center !important;
+  }
+  #shop-for-groceries .shop > span:first-child {
+    font-size: 24px !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 576px) {
+  .top {
+    padding: 10px !important;
+  }
+  .custom-mb-5 {
+    margin-bottom: 3rem;
+  }
+  .fs-52 {
+    font-size: 20px;
+  }
+ 
+  .navbar-collapse {
+    padding: 40px 0 0 0 !important;
+    margin: 20px 0 0 0 !important;
+    width: 100vw !important;
+    background: #13ac77 !important;
+    text-align: center;
+  }
+  #navbarSupportedContent > ul.navbar-nav.mx-auto.mb-2.mb-lg-0 > li {
+    background: #13A675;
+    margin: 12px 25px;
+    border-radius: 12px;
+  }
+  nav ul li > a {
+    margin: 12px 0 !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    opacity: 1 !important;
+  }
+  nav .social-icons img {
+    color: #fff;
+    margin: 5px;
+  }
+  #become-a-shopper {
+    width: 90vw;
+    padding: 20px;
+  }
+  #become-a-shopper span:first-child {
+    text-align: center;
+  }
+  #hero {
+    height: 85vh !important;
+  }
+  .hero-text {
+    top: 70%;
+    border-radius: 12px;
+  }
+  #user-registeration .holla {
+    font-size: 24px;
+  }
+  #user-registeration .register-arrow img {
+    margin-top: 50px;
+  }
+  footer.register {
+    display: none;
+  }
+  .register-arrow a img {
+    margin-left: -10px;
+  }
+  #user-registeration form img.visibility-on {
+    width: 15% !important;
+  }
+  #business .hero-text {
+    margin-bottom: 10rem;
+  }
+  #user-registeration .sign-up-logos img {
+    width: 20%;
+  }
+  .fs-36 {
+    font-size: 20px;
+  }
+  #user-registeration form input::placeholder {
+    font-size: 10px;
+  }
+ .navbar-light .navbar-brand {
+    width: 20% !important;
+}
+#health-concious .custom-card {
+  padding: 5px;
+}
+#health-concious .custom-card h5 {
+  font-weight: bold;
+}
+#health-concious .first-custom-card {
+  display: inline-block;
+}
+
+} 
+@media (max-width: 375px) {
+  #business .hero-text {
+    margin-bottom: 6rem;
+  }
+.apple-playstore span,
+  .start-shopping {
+    color: #13ac77;
+  }
+  
+}
+@media (max-width: 320px) {
+  .delivery-circle {
+    display: none;
+  }
+  #hero {
+    height: 100vh !important;
+  }
+  .apple-playstore span,
+  .start-shopping {
+    font-size: 8px;
+  }
+  .first-btn {
+    font-size: 8px;
+  }
+  #user-registeration .holla,
+  .select-a-profile {
+    font-size: 18px;
+  }
+  #user-registeration .profile {
+    width: 100px;
+    height: 100px;
+  }
+  .small {
+    font-size: 12px !important;
+  }
+  .register-arrow a img {
+    width: 15%;
+    margin: 15px;
+    margin-left: -10px;
+  }
+  #business .hero-text {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 280px) {
+  #user-registeration form img.visibility-on {
+    width: 20% !important;
+  }
+}

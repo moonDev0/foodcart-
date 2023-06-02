@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* Home Page CSS starts */
+
+header nav ul li a.active::before{
+    width: 50%;
+}
+header nav ul li a.active{ 
+    font-weight: bold !important;
+}
+header nav ul li a::before {
+    position: absolute;
+    bottom: 8px;
+    width: 0%;
+    height: 2px;
+    display: block;
+    content: '';
+    background-color: #13ac77;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+  }
+  header nav ul li a:hover::before {
+    width: 50%;
+  }
+
+.categories a.active, a:hover {
+    font-weight: Bolder !important;
+    opacity: 1 !important;
+}
+
+
+/* header */
+@font-face {
+    font-family: Futura-medium;
+    src: url(../fonts/futura/Futura\ Medium.otf);
+}
+@font-face {
+    font-family: Futura-bold;
+    src: url(../fonts/futura/Futura\ Bold.ttf);
+}
+.futura-medium  {
+    font-family: Futura-medium;
+}
+.top {
+ 
+  background: #fff !important;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  min-height: 90px;
+  padding: 16px 60px !important;
+}
+.navbar-brand{
+    width: 60px;
+  }
+nav ul li a {
+  position: relative;
+  font-family: Futura-medium !important;
+  font-size: 18px !important;
+  color: #000000 !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  opacity: .6;
+  display: inline-block !important;
+}
+nav ul li a.download-btn {
+  background: #13ac77;
+  border-radius: 20px;
+  padding: 20px !important;
+  font-family: Futura-medium;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight:  200 !important;
+  opacity: 1 !important;
+}
+header{
+    width: 100%;
+    position: fixed !important;
+    width: 100%;
+    z-index: 10;
+}
+.logo img{
+    width: 58px ;
+    height: 58px;
+    margin-right: 20px;
+}
+
+
+
+/* header {
+  height: 120vh;
+} */
+/* Home Page CSS Ends */
+
+
+
+/* Shoppers Page CSS starts */
+
+/* Shoppers Page CSS End */
+
+
+
+/* Business Page CSS starts */
+
+/* Business Page CSS Ends */
+
+
+
+/* Health Corners Page CSS starts */
+
+/* main section of the body */
+body{
+    text-transform: capitalize !important;
+}
+main{
+    padding-top: 100px;
+    margin-bottom: 100px;
+    font-family: Futura-medium;
+}
+
+/* firt container-xxl of containing title, subscribe us */
+.main{
+    top: 225px;
+    left: 278px;
+    opacity: 1;
+    width: 100%;
+}
+
+/* large page title 'health-corner' */
+.title{
+    color: #13ac77;
+    font-size:60px;
+    letter-spacing: -1.25px;
+}
+.caption{
+    color: #898990;
+    font-size: 18px;
+}
+ 
+/* subcssribe us begins */
+.btn{
+    font-weight: bolder;
+}
+.fs-13 {
+    font-size: 13px !important;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.email-input input{
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0 10px;
+}
+.mail-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.submit-email{
+    background-color: #13ac77;
+    height: 70px;
+    border:none !important;
+    width: 153px;
+    margin-left: 20px;
+    border-radius: 12px;
+    color: white;
+}
+.email-input{
+    width: 339px;
+    height: 70px;
+    background-color: #13AC7717;  
+    border-radius: 12px !important; 
+  
+ }
+ h5{
+     font-weight: bolder;
+ }
+ .bold{
+     font-weight: bolder !important;
+ }
+/* subscribe us ends here */
+
+
+
+
+/* three collumn cards begins here */
+
+.card{
+    
+   border-radius: 10px !important;
+   border: 0px;
+   margin-bottom: 20px !important ;
+}
+
+
+.card img{
+    border-radius: 20px;
+    border-radius: 20px !important;
+}
+
+.view-more-articles{
+    top: 1251px;
+    left: 875px;
+    width: 170px;
+    height: 70px;
+    background-color: #13AC7717;
+    border-radius: 15px;
+    border: none;
+    color: #13ac77;
+    
+}
+#view-more-cards-parent{
+    margin-top: 120px !important;
+   
+}
+/* Health Corner Page CSS Ends */
+
+
+
+
+/* Footer CSS Starts */
+footer {
+    backface-visibility: #fff;
+    box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    bottom: 0;
+}
+.footer-nav-items span a {
+    color: #000000 !important;
+}
+.footer-nav-items span a:hover {
+    color: #fff !important;
+}
+/* Footer CSS Ends */
+
+
+@media (max-width: 769px) {
+    .top {
+        padding: 10px !important;
+    }
+    .main{
+        padding: 0 20px !important;
+    }
+    .fs-13 {
+        font-size: 10px !important;
+    }
+    .fs-18 {
+        font-size: 14px !important;
+    }
+    #view-more-cards-parent{
+        margin-top: 12px !important;
+       
+    }
+    .caption{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .caption, .subscribe{
+        text-align: center;
+    }
+    .submit-email{
+        width: 100%;
+        margin: 0;
+    }
+    .email-input{
+        width: 100%;
+    }
+    .navbar-light .navbar-brand {
+        width: 20%;
+      }
+}
+@media (max-width: 576px) {
+    .navbar-light .navbar-toggler {
+        border: 0;
+        padding: 3px 8px !important;
+      }
+      .navbar-toggler:focus,
+      .navbar-toggler:active,
+      .navbar-toggler-icon:focus {
+        text-decoration: none;
+        outline: 0 !important;
+        box-shadow: none !important;
+      }
+      
+    .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.toggler-icon {
+        display: none;
+      }
+      .navbar-toggler>.close .navbar-toggler.collapsed {
+        display:inline;
+      }
+    .navbar-collapse {
+        padding: 40px 0 0 0 !important;
+        margin: 20px 0 0 0 !important;
+        width: 100vw !important;
+        background: #13ac77 !important;
+        text-align: center;
+      }
+      #navbarSupportedContent > ul.navbar-nav.mx-auto.mb-2.mb-lg-0 > li {
+        background: #13A675;
+        margin: 12px 25px;
+        border-radius: 12px;
+      }
+      nav ul li > a {
+        margin: 12px 0 !important;
+        font-size: 16px !important;
+        color: #fff !important;
+        opacity: 1 !important;
+      }
+      nav .social-icons img {
+        color: #fff;
+        margin: 5px;
+      }
+}
+    @media screen and (max-width:350px) {
+        .logo{
+            display: none;
+        }
+        
+    }
